@@ -2,7 +2,7 @@ import { useState } from "react"
 import { X } from "lucide-react"
 
 
-function Header({ setIsCartOpen, cart }) {
+function Header({ setIsCartOpen, cart, search , setSearch }) {
 
   const [menuOpen , setMenuOpen ] = useState(false)
 
@@ -119,7 +119,10 @@ function Header({ setIsCartOpen, cart }) {
           <div className="w-full">
             <div className="relative w-full flex">
               <svg className="absolute left-[0.85rem] top-[50%] translate-y-[-50%] w-[16px] h-[16px] stroke-[var(--text-muted)]" viewBox="0 0 24 24" fill="none" strokeWidth="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              <input className="w-full bg-[rgba(18, 22, 29, 0.9)] border border border-[var(--border)] p-[0.65rem_1rem_0.65rem_2.5rem] text-[var(--text)] rounded-[var(--radius-md)] text-[0.9rem] outline-none [transition:border-color_0.15s_ease,background-color_0.15s_ease] focus:border-[var(--border-focus)] bg-[rgba(18, 22, 29, 0.98)] shadow-[0 0 0 2px var(--accent-glow)]" type="text" placeholder="Search STYLIST store, audio, desk gear..." />
+              <input
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="w-full bg-[rgba(18, 22, 29, 0.9)] border border border-[var(--border)] p-[0.65rem_1rem_0.65rem_2.5rem] text-[var(--text)] rounded-[var(--radius-md)] text-[0.9rem] outline-none [transition:border-color_0.15s_ease,background-color_0.15s_ease] focus:border-[var(--border-focus)] bg-[rgba(18, 22, 29, 0.98)] shadow-[0 0 0 2px var(--accent-glow)]" type="text" placeholder="Search STYLIST store, audio, desk gear..." />
             </div>
           </div>
         </div>
