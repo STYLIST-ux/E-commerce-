@@ -472,7 +472,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
               </div>
             
               <h2 className="text-xl font-bold mb-2">
-                Order Ready {<Check />}
+                Order Ready 
               </h2>
             
               <p className="text-sm text-[var(--text-muted)]">
