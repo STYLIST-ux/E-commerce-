@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #07090c;
+  --card-bg: rgba(18, 22, 29, 0.7);
+  --card-bg-hover: rgba(26, 32, 42, 0.85);
+  --text: #f0f6fc;
+  --text-muted: #8b949e;
+  --accent: #e3b341;
+  --accent-glow: rgba(227, 179, 65, 0.15);
+  --border: rgba(240, 246, 252, 0.08);
+  --border-focus: rgba(227, 179, 65, 0.4);
+  --glass-blur: blur(16px);
+  --glass-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.75), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(227, 179, 65, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 0.01) 0%, transparent 40%);
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@keyframes burst {
+  0% {
+    transform: translate(0, 0) scale(0);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(var(--x), var(--y)) scale(1);
+    opacity: 0;
+  }
+}
