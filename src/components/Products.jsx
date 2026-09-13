@@ -2,10 +2,11 @@ import { useState } from "react"
 import products from '../data/products.js'
 import { Star, X } from "lucide-react"
 
-function Products( { cart , setCart, setIsCartOpen}) {
+function Products( { cart , setCart, setIsCartOpen ,search}) {
 
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false)
+  
 
   function handleCart(product) {
     const existingItem = cart.find(item => item.id === product.id)
@@ -29,6 +30,10 @@ function Products( { cart , setCart, setIsCartOpen}) {
     }
     setIsCartOpen(true)
   }
+
+  const filteredProducts = products.filter(item => {
+    return item.title.toLowerCase().includes(search.toLowerCase())
+  })
   
   return (
     <div>
@@ -38,7 +43,7 @@ function Products( { cart , setCart, setIsCartOpen}) {
          *product card
          *
          */}
-        {products.map(product => {
+        {filteredProducts.map(product => {
           return (
             <article key={product.id} className="
               bg-[var(--card-bg)]

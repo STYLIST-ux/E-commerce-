@@ -20,7 +20,7 @@ const details = [
 ]
 
 
-function Hero({ cart, setCart, setIsCartOpen}) {
+function Hero({ cart, setCart, setIsCartOpen,search}) {
   return (
     <main className="max-w-[1200px] mx-auto px-8 py-7 flex flex-col gap-[2.5rem]">
       {/**
@@ -218,6 +218,7 @@ function Hero({ cart, setCart, setIsCartOpen}) {
           cart={cart}
           setCart={setCart}
           setIsCartOpen={setIsCartOpen}
+          search={search}
         />
     </section>
     </main>

@@ -11,6 +11,7 @@ const App = () => {
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || []
   })
+  const [search, setSearch] = useState("")
   
   return (
     <>
@@ -18,12 +19,15 @@ const App = () => {
         setIsCartOpen={setIsCartOpen}
         cart={cart}
         setCart={setCart}
+        search={search}
+        setSearch={setSearch}
       />
       
       <Hero 
         cart={cart}
         setCart={setCart}
         setIsCartOpen={setIsCartOpen}
+        search={search}
       />
 
       <CartDrawer 
