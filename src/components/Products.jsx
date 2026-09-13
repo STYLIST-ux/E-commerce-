@@ -2,7 +2,7 @@ import { useState } from "react"
 import products from '../data/products.js'
 import { Star, X } from "lucide-react"
 
-function Products( { cart , setCart, setIsCartOpen ,search}) {
+function Products( { cart , setCart, setIsCartOpen ,search, category }) {
 
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false)
@@ -14,10 +14,13 @@ function Products( { cart , setCart, setIsCartOpen ,search}) {
 
     if(existingItem) {
       const updatedItem = cart.map(item => {
-        return {
+        if(item.id === product.id) {
+          return {
           ...item,
           quantity: item.quantity + 1
+          }
         }
+        return item
       })
       setCart(updatedItem)
     }else {
@@ -31,9 +34,35 @@ function Products( { cart , setCart, setIsCartOpen ,search}) {
     setIsCartOpen(true)
   }
 
-  const filteredProducts = products.filter(item => {
+  let categoryProducts;
+
+  if(category === "tech") {
+    categoryProducts = products.filter(item => {
+      return item.category === "tech"
+    })
+  }else if(category === "audio") {
+    categoryProducts = products.filter(item => {
+      return item.category === "audio"
+    })
+  }else if(category === "desk") {
+    categoryProducts = products.filter(item => {
+      return item.category === "desk"
+    })
+  }else if(category === "lifestyle") {
+    categoryProducts = products.filter(item => {
+      return item.category === "lifestyle"
+    })
+  }else {
+    categoryProducts = products
+  }
+
+  const filteredProducts = categoryProducts.filter(item => {
     return item.title.toLowerCase().includes(search.toLowerCase())
   })
+
+  if (filteredProducts.length === 0) {
+    return <p>No products found.</p>
+  }
   
   return (
     <div>

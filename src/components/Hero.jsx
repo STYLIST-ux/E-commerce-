@@ -1,4 +1,5 @@
 import Products from "./Products"
+import { useState } from "react"
 
 
 const details = [
@@ -21,6 +22,9 @@ const details = [
 
 
 function Hero({ cart, setCart, setIsCartOpen,search}) {
+  
+  const [category, setCategory] = useState("all")
+  
   return (
     <main className="max-w-[1200px] mx-auto px-8 py-7 flex flex-col gap-[2.5rem]">
       {/**
@@ -161,7 +165,8 @@ function Hero({ cart, setCart, setIsCartOpen,search}) {
               cursor-pointer
               [transition:all_0.15s_ease] 
               hover:text-[var(--text)]
-              hover:border-[rgba(240, 246, 252, 0.15)]" data-category="all">All Items</button>
+              hover:border-[rgba(240, 246, 252, 0.15)]" data-category="all"
+              onClick={() => setCategory("all")}>All Items</button>
             <button className="
               bg-[rgba(18, 22, 29, 0.6)]
               border 
@@ -173,7 +178,7 @@ function Hero({ cart, setCart, setIsCartOpen,search}) {
               cursor-pointer
               [transition:all_0.15s_ease] 
               hover:text-[var(--text)]
-              hover:border-[rgba(240, 246, 252, 0.15)]"  data-category="tech">Tech & Gear</button>
+              hover:border-[rgba(240, 246, 252, 0.15)]"  data-category="tech" onClick={() => setCategory("tech")}>Tech & Gear</button>
             <button className="
               bg-[rgba(18, 22, 29, 0.6)]
               border 
@@ -185,7 +190,7 @@ function Hero({ cart, setCart, setIsCartOpen,search}) {
               cursor-pointer
               [transition:all_0.15s_ease] 
               hover:text-[var(--text)]
-              hover:border-[rgba(240, 246, 252, 0.15)]" data-category="audio">Audio</button>
+              hover:border-[rgba(240, 246, 252, 0.15)]" data-category="audio" onClick={() => setCategory("audio")}>Audio</button>
             <button className="
               bg-[rgba(18, 22, 29, 0.6)]
               border 
@@ -197,7 +202,7 @@ function Hero({ cart, setCart, setIsCartOpen,search}) {
               cursor-pointer
               [transition:all_0.15s_ease] 
               hover:text-[var(--text)]
-              hover:border-[rgba(240, 246, 252, 0.15)]"  data-category="desk">Desk & Workspace</button>
+              hover:border-[rgba(240, 246, 252, 0.15)]"  data-category="desk" onClick={() => setCategory("desk")}>Desk & Workspace</button>
             <button className="
               bg-[rgba(18, 22, 29, 0.6)]
               border 
@@ -209,7 +214,7 @@ function Hero({ cart, setCart, setIsCartOpen,search}) {
               cursor-pointer
               [transition:all_0.15s_ease] 
               hover:text-[var(--text)]
-              hover:border-[rgba(240, 246, 252, 0.15)]"  data-category="lifestyle">Lifestyle</button>
+              hover:border-[rgba(240, 246, 252, 0.15)]"  data-category="lifestyle" onClick={() => setCategory("lifestyle")}>Lifestyle</button>
           </div>
         </div>
   
@@ -219,6 +224,7 @@ function Hero({ cart, setCart, setIsCartOpen,search}) {
           setCart={setCart}
           setIsCartOpen={setIsCartOpen}
           search={search}
+          category={category}
         />
     </section>
     </main>
