@@ -214,6 +214,150 @@ const products = [
     price: 120,
     image: "https://images.unsplash.com/photo-1622445268465-8438165a2481?w=800&q=85",
     description: "Compact multi-device charging hub for a clean and organized workspace."
+  },
+    {
+    id: 25,
+    title: "Ultrawide Desk Monitor",
+    category: "tech",
+    rating: 4.9,
+    price: 420,
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=85",
+    description: "Immersive ultrawide display designed for multitasking, editing, and modern creative workflows."
+  },
+  {
+    id: 26,
+    title: "Studio USB Microphone",
+    category: "audio",
+    rating: 4.8,
+    price: 180,
+    image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&q=85",
+    description: "Professional USB microphone with clear vocal capture for streaming, calls, and content creation."
+  },
+  {
+    id: 27,
+    title: "Aluminum Monitor Stand",
+    category: "desk",
+    rating: 4.7,
+    price: 80,
+    image: "https://images.unsplash.com/photo-1616763355548-1b606f439f86?w=800&q=85",
+    description: "Minimal aluminum monitor riser that improves screen height while creating useful desk storage."
+  },
+  {
+    id: 28,
+    title: "Minimal Travel Sling",
+    category: "lifestyle",
+    rating: 4.6,
+    price: 58,
+    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=85",
+    description: "Compact everyday sling with organized storage for phones, accessories, and personal essentials."
+  },
+  {
+    id: 29,
+    title: "Wireless Studio Headset",
+    category: "audio",
+    rating: 4.9,
+    price: 225,
+    image: "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=85",
+    description: "Low-latency wireless headset with detailed audio and comfortable all-day studio ergonomics."
+  },
+  {
+    id: 30,
+    title: "USB-C Multiport Dock",
+    category: "tech",
+    rating: 4.8,
+    price: 135,
+    image: "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=800&q=85",
+    description: "Compact multiport dock providing flexible connectivity for modern laptops and workstations."
+  },
+  {
+    id: 31,
+    title: "Ambient Desk Light",
+    category: "desk",
+    rating: 4.7,
+    price: 68,
+    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=85",
+    description: "Soft ambient lighting designed to add warmth and focus to a contemporary workspace."
+  },
+  {
+    id: 32,
+    title: "Minimal Analog Watch",
+    category: "lifestyle",
+    rating: 4.8,
+    price: 155,
+    image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&q=85",
+    description: "Refined minimalist timepiece with a clean dial and understated everyday design."
+  },
+  {
+    id: 33,
+    title: "Compact Bluetooth Speaker",
+    category: "audio",
+    rating: 4.7,
+    price: 90,
+    image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=85",
+    description: "Portable Bluetooth speaker delivering balanced audio in a compact premium enclosure."
+  },
+  {
+    id: 34,
+    title: "Low Profile Mechanical Keyboard",
+    category: "tech",
+    rating: 4.9,
+    price: 175,
+    image: "https://images.unsplash.com/photo-1595225476474-87563907a212?w=800&q=85",
+    description: "Slim mechanical keyboard combining responsive switches with a refined low-profile design."
+  },
+  {
+    id: 35,
+    title: "Cable Management Kit",
+    category: "desk",
+    rating: 4.6,
+    price: 32,
+    image: "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=800&q=85",
+    description: "Clean workspace cable organization kit for creating a minimal and distraction-free setup."
+  },
+  {
+    id: 36,
+    title: "Everyday Tech Organizer",
+    category: "lifestyle",
+    rating: 4.8,
+    price: 48,
+    image: "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800&q=85",
+    description: "Compact organizer for cables, chargers, adapters, and everyday technology essentials."
+  },
+  {
+    id: 37,
+    title: "Premium Studio Earphones",
+    category: "audio",
+    rating: 4.8,
+    price: 115,
+    image: "https://images.unsplash.com/photo-1598331668826-20cecc596b86?w=800&q=85",
+    description: "Detailed in-ear audio with a comfortable fit and balanced sound for focused listening."
+  },
+  {
+    id: 38,
+    title: "Wireless Charging Pad",
+    category: "tech",
+    rating: 4.7,
+    price: 55,
+    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&q=85",
+    description: "Slim wireless charging pad designed to keep your phone powered without cluttering your desk."
+  },
+  {
+    id: 39,
+    title: "Desk Accessory Tray",
+    category: "desk",
+    rating: 4.6,
+    price: 40,
+    image: "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=800&q=85",
+    description: "Minimal desktop tray for keeping keys, accessories, and everyday essentials neatly organized."
+  },
+  {
+    id: 40,
+    title: "Premium Canvas Tote",
+    category: "lifestyle",
+    rating: 4.7,
+    price: 62,
+    image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=85",
+    description: "Durable everyday canvas tote with a clean silhouette for work, travel, and daily essentials."
   }
 ]
 
