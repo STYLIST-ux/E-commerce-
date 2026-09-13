@@ -1,4 +1,4 @@
-import { X } from "lucide-react"
+import { X , Star , Check} from "lucide-react"
 import { useEffect, useState } from "react"
 
 const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
@@ -388,7 +388,9 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                 " style={{
                   "--x" : "-120px",
                   "--y" : "-100px"
-                }}>âś¦</span>
+                }}>
+              <Star size={14}/>
+              </span>
               <span
                 className="
                   absolute
@@ -403,7 +405,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                   "--y": "-100px"
                 }}
               >
-                âś¦
+                <Star size={14}/>
               </span>
               
               <span
@@ -420,7 +422,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                   "--y": "100px"
                 }}
               >
-                âś¦
+                <Star size={14}/>
               </span>
               
               <span
@@ -437,7 +439,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                   "--y": "100px"
                 }}
               >
-                âś¦
+                <Star size={14}/>
               </span>
             </div>
             <div className="
@@ -466,11 +468,11 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                 justify-center
                 text-2xl
               ">
-                âś“
+                <Check size={16}/>
               </div>
             
               <h2 className="text-xl font-bold mb-2">
-                Order Ready đźŽ‰
+                Order Ready {<Check />}
               </h2>
             
               <p className="text-sm text-[var(--text-muted)]">
