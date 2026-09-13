@@ -68,24 +68,24 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
     
     const orderTime = new Date().toLocaleString()
     const productsText = cart.map(item =>
-    `� ${item.title} � ${item.quantity} � $${(item.price 
+    ` ${item.title} * ${item.quantity} - $${(item.price 
       * item.quantity).toFixed(2)}`
     ).join("\n")
     
     const message = `
-       NEW STYLIST ORDER
+       NEW STYLIST ORDER
         
-       Customer: ${customerName}
-       Location: ${customerLocation}
-       Phone: ${customerPhone}
-       Note: ${orderNote || "None"}
+      Customer: ${customerName}
+      Location: ${customerLocation}
+      Phone: ${customerPhone}
+      Note: ${orderNote || "None"}
         
       PRODUCTS
       ${productsText}
 
         
-       Total: $${subtotal.toFixed(2)}
-       Order time: ${orderTime}
+      Total: $${subtotal.toFixed(2)}
+      Order time: ${orderTime}
       `
 
     const phoneNumber = "2348066659871"
@@ -388,7 +388,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                 " style={{
                   "--x" : "-120px",
                   "--y" : "-100px"
-                }}></span>
+                }}>✦</span>
               <span
                 className="
                   absolute
@@ -403,7 +403,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                   "--y": "-100px"
                 }}
               >
-                
+                ✦
               </span>
               
               <span
@@ -420,7 +420,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                   "--y": "100px"
                 }}
               >
-                
+                ✦
               </span>
               
               <span
@@ -437,7 +437,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                   "--y": "100px"
                 }}
               >
-                
+                ✦
               </span>
             </div>
             <div className="
@@ -466,11 +466,11 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                 justify-center
                 text-2xl
               ">
-                
+                ✓
               </div>
             
               <h2 className="text-xl font-bold mb-2">
-                Order Ready 
+                Order Ready 🎉
               </h2>
             
               <p className="text-sm text-[var(--text-muted)]">
