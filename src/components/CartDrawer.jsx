@@ -388,7 +388,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                 " style={{
                   "--x" : "-120px",
                   "--y" : "-100px"
-                }}>✦</span>
+                }}>âś¦</span>
               <span
                 className="
                   absolute
@@ -403,7 +403,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                   "--y": "-100px"
                 }}
               >
-                ✦
+                âś¦
               </span>
               
               <span
@@ -420,7 +420,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                   "--y": "100px"
                 }}
               >
-                ✦
+                âś¦
               </span>
               
               <span
@@ -437,7 +437,7 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                   "--y": "100px"
                 }}
               >
-                ✦
+                âś¦
               </span>
             </div>
             <div className="
@@ -466,11 +466,11 @@ const CartDrawer = ({ isCartOpen, setIsCartOpen,cart, setCart }) => {
                 justify-center
                 text-2xl
               ">
-                ✓
+                âś“
               </div>
             
               <h2 className="text-xl font-bold mb-2">
-                Order Ready 🎉
+                Order Ready đźŽ‰
               </h2>
             
               <p className="text-sm text-[var(--text-muted)]">
